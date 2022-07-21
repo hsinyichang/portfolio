@@ -1,6 +1,8 @@
-Thanks for downloading this template!
+歡迎光臨我的個人作品集
 
-Template Name: MyResume
-Template URL: https://bootstrapmade.com/free-html-bootstrap-template-my-resume/
-Author: BootstrapMade.com
-License: https://bootstrapmade.com/license/
+個人圖片做在head區   圖片最小360px  可顯示於手機  
+
+配色#7F95D1淺籃紫
+#FF82A9 桃紅
+#FFC0BE 粉橘
+#FFEBE7 膚色
