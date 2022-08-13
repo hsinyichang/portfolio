@@ -36,13 +36,16 @@ include_once "base.php";
 ?>
 <h2>留言區</h2>
 <div class="contactDiv">
+    <form action="./api/edit.php" method="post">
         <li class="contactLi liheader">
             <div style="width: 5%;">序號</div>
-            <div style="width: 19%;">姓名</div>
-            <div style="width: 19%;">email</div>
-            <div style="width: 19%;">留言主題</div>
-            <div style="width: 19%;">留言內容</div>
-            <div style="width: 19%;">留言時間</div>
+            <div style="width: 18%;">姓名</div>
+            <div style="width: 18%;">email</div>
+            <div style="width: 18%;">留言主題</div>
+            <div style="width: 18%;">留言內容</div>
+            <div style="width: 18%;">留言時間</div>
+            <div style="width: 5%;">刪除</div>
+            
         </li>
 
         <?php
@@ -56,8 +59,16 @@ include_once "base.php";
             <div style="width: 19%;"><?=$row['sub']?></div>
             <div style="width: 19%;"><?=$row['message']?></div>
             <div style="width: 19%;"><?=$row['date']?></div>
+            <div style="width: 5%;"><input type="checkbox" name="del[]" value="<?=$row['id']?>"></div>
+            <input type="hidden" name="id[]" value="<?=$row['id']?>"><!--要加一個隱藏的id[]-->
         </li>
         <?php
         }
         ?>
+        <li class="contactLi li">
+            <input type="submit" value="修改確定"><input type="reset" value="重置">
+            <input type="hidden" name="table" value="r_<?=$do?>">
+            <input type="hidden" name="table1" value="<?=$do?>">
+        </li>
+    </form>
 </div>
