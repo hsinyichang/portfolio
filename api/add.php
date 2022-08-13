@@ -4,7 +4,7 @@ $DB=new DB($_POST['table']);
 
 $data=[];
 if(isset($_FILES['img']['tmp_name'])){
-    move_uploaded_file($_FILES['img']['tmp_name'],"../img/".$_FILES['img']['name']);
+    move_uploaded_file($_FILES['img']['tmp_name'],"../assets/img/".$_FILES['img']['name']);
     $data['img']=$_FILES['img']['name'];
 }
 
@@ -27,7 +27,7 @@ switch($_POST['table']){
         $data['sh']=1;
     break;
     default:
-        $data['sh']=1;
+        $data['sh']=0;
 
 }
 

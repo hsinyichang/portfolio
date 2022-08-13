@@ -14,6 +14,9 @@ if(!empty($_POST['id'])){
                     $row['footer']=$_POST['footer'][$idx]; //要加上key 才知道傳送的是第幾筆
                     $row['sh']=(isset($_POST['sh']) && $_POST['sh']==$id)?1:0;
                 break;
+                case "r_img":
+                    $row['sh']=(isset($_POST['sh']) && $_POST['sh']==$id)?1:0;                
+                break;
                 
             }
 
