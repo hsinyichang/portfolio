@@ -1,3 +1,6 @@
+<?php
+include_once "base.php";
+?>
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -26,17 +29,30 @@
             <div class="collapse navbar-collapse" id="navbarResponsive">
                 <ul class="navbar-nav">
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="?do=contact">留言區</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#experience">Experience</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#education">Education</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="?do=footer">頁尾版權</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="?do=myphoto">頭像</a></li>
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#skills">Skills</a></li>
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#interests">Interests</a></li>
-                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="#awards">Awards</a></li>
+                    <?php
+                    if(!isset($_SESSION['admin'])){
+                    ?>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="?do=login">登入</a></li>
+                    <?php
+                    }else{
+                    ?>
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="./api/logout.php">登出</a></li>   
+                    <?php
+                    }
+                    ?>
                 </ul>
             </div>
         </nav>
         <!-- Page Content-->
         <div class="container-fluid p-0">
             <?php
+                if(!isset($_SESSION['admin'])){
+                    include './back/login.php';
+                }else{
                 $do=$_GET['do']??'contact';
                 $file='./back/'.$do.'.php';
                 if(file_exists($file)){
@@ -44,6 +60,7 @@
                 }else{
                     include './back/contact.php';
                 }
+            }
             ?>
         </div>
         <!-- Bootstrap core JS-->

@@ -2,9 +2,8 @@
 //檢查帳密是否正確
 
 include_once "../base.php";
-session_start();
 $acc=$_POST['acc'];
-$pw=base64_encode($_POST['pw']);//編碼過的
+$pw=$_POST['pw'];
 
 /* if($acc==資料表中的acc && $pw==資料表中的pw){
     //登入成功->會員中心
@@ -13,16 +12,16 @@ $pw=base64_encode($_POST['pw']);//編碼過的
 }
  */
 
-$sql="SELECT count(*) FROM `users` WHERE `acc`='$acc' && `pw`='$pw'";
+// $sql="SELECT count(*) FROM `r_admin` WHERE `acc`='$acc' && `pw`='$pw'";
 
 //$user=$pdo->query($sql)->fetch();
-$chk=$pdo->query($sql)->fetchColumn();
+$chk=$Admin->math('count','id',['acc'=>$acc, 'pw'=>$pw]);
 
 //if($acc==$user['acc'] && $pw==$user['pw']){
-if($chk){
-    $_SESSION['user']=$acc;//存入帳號到session
-    header("location:../index.php");
+if($chk>0){
+    $_SESSION['admin']=1;//存入帳號到session
+    to("../back.php");
 }else{
-    header("location:../index.php?do=login&error=帳號或密碼錯誤");
+    to("../back.php?do=login&error=帳號或密碼錯誤");
 }
 ?>
