@@ -122,6 +122,9 @@ function to($url){
     header('location:'.$url);
 }
 
-$Contact=new DB('contact');
+$Contact=new DB('r_contact');
+$Admin=new DB('r_admin');
+$Footer=new DB('r_footer');
+$Img=new DB('r_img');
 
 ?>
