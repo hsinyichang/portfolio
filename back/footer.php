@@ -42,7 +42,7 @@
             <div style="width: 10%;"><input type="radio" name="sh" value="<?=$row['id']?>" <?=($row['sh']==1)?'checked':'';?>></div>
             <div style="width: 10%;"><input type="checkbox" name="del[]" value="<?=$row['id']?>"></div>
         </li>
-        <input type="hidden" name="id[]" value="<?=$row['id']?>">
+        <input type="hidden" name="id[]" value="<?=$row['id']?>"><!--要加一個隱藏的id[]-->
         <?php
         }
         ?>
