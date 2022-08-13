@@ -17,6 +17,11 @@
         text-align: center;
         margin-top: 1rem;
     }
+    .header{
+        background-color: #FFE2BE;
+    font-weight: bolder;
+    font-size: large;
+    }
 </style>
 
 <h2>頁尾版權</h2>
@@ -31,7 +36,7 @@
         </li>
     </form>
     <form action="./api/edit.php" method="post">
-        <li class="footer_li">
+        <li class="footer_li header">
             <div style="width: 10%;">序號</div>
             <div style="width: 70%;">頁尾名稱</div>
             <div style="width: 10%;">顯示</div>
