@@ -13,8 +13,13 @@
         text-align: center;
         margin-bottom: 1rem;
     }
+    h2{
+        text-align: center;
+        margin-top: 1rem;
+    }
 </style>
 
+<h2>頁尾版權</h2>
 <div class="footer_div">
     <form action="./api/add.php" method="post">
         <li class="footer_li">
