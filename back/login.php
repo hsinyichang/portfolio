@@ -6,7 +6,7 @@
     }
 
     p {
-        padding-top: 76px;
+        padding-top: 202px;
         text-align: center;
         font-size: 2.5rem;
 
@@ -62,7 +62,7 @@
     .td2 {
         padding-top: 35px;
         height: 80px;
-
+        color: #FA9F31;
     }
 
     .td3 {
@@ -80,9 +80,9 @@
     table button {
         width: 100px;
         font-size: 28px;
-        background-color: pink;
+        background-color:#FA9F31;
         border: 1px solid white;
-        box-shadow: 2px 2px 2px #E9C8FD;
+        box-shadow: 2px 2px 2px #FF9671;
         border-radius: 20px;
         cursor: pointer;
         color: white;
@@ -123,7 +123,7 @@
                 </tr>
                 <tr>
                     <td class="td2">
-                        　　<input type="password" name="pw" id="iconpw" placeholder="密碼" required title="請填寫密碼"><i class="fa fa-eye" id=togglepassword></i>
+                        　　<input type="password" name="pw" class="iconpw" placeholder="密碼" required title="請填寫密碼"><i class="fa fa-eye togglepassword"></i>
                     </td>
                 </tr>
                 <tr>
@@ -132,16 +132,17 @@
                 </tr>
             </table>
         </form>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        
         <script>
             //小圖示顯示密碼
             //抓小圖示id
-            const togglepassword = document.querySelector("#togglepassword");
+            const togglepassword = document.querySelector(".togglepassword");
             //抓輸入密碼id
-            const pw = document.querySelector("#iconpw");
+            const pw = document.querySelector(".iconpw");
             //監聽事件
             togglepassword.addEventListener('click', function() {
                 //判斷password 還是text
+                console.log(this);
                 const type = pw.getAttribute('type') === 'password' ? 'text' : 'password';
                 //設定
                 pw.setAttribute('type', type);

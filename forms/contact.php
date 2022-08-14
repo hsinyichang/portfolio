@@ -3,7 +3,7 @@
 
 date_default_timezone_set("Asia/Taipei");
 
-$dsn="mysql:host=localhost;charset=utf8;dbname=contact";
+$dsn="mysql:host=localhost;charset=utf8;dbname=resume";
 $pdo=new PDO($dsn,'root','');
 
 $name=$_POST['name'];
@@ -11,11 +11,11 @@ $email=$_POST['email'];
 $sub=$_POST['sub'];
 $message=$_POST['message'];
 
-$sql="INSERT INTO `user` (`name`,`email`,`sub`,`message`)
+$sql="INSERT INTO `r_contact` (`name`,`email`,`sub`,`message`)
                   values('{$_POST['name']}','{$_POST['email']}','{$_POST['sub']}','{$_POST['message']}');";
 
 $pdo->exec($sql);
 
-header('location:../index.html');
+header('location:../index.php');
 ?>
 

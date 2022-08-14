@@ -85,7 +85,8 @@ include_once "base.php";
             <h3 style="text-align: center;">您好！我是張欣儀</h3>
             <br>
             <p>
-            　　畢業於大同大學資訊經營學系，由於對網頁設計有興趣且大學又是相關科系，所以報名了泰山職訓局為期半年的<strong>PHP網頁設計班課程</strong>，期望在未來能夠更精進自己的程式語言！
+            　　畢業於大同大學資訊經營學系，由於對網頁設計有興趣且大學又是相關科系，所以報名了泰山職訓局為期半年的<strong>PHP網頁設計班課程</strong>，期望在未來能夠更精進自己的程式語言！<br>
+            　　善於當個傾聽者，尊重他人的想法與意見，重視團體合作精神，以細心仔細的態度完成工作。
             </p>
             <div class="row">
               <div class="col-lg-6">
@@ -264,6 +265,21 @@ include_once "base.php";
                   <a href="assets/img/portfolio/calender.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title="PHP Calender"><i class="bx bx-plus"></i></a>
                   <!-- <a href="./vote" class="portfolio-details-lightbox" data-glightbox="type: external" title="Portfolio Details"><i class="bx bx-link"></i></a> -->
                   <a href="./calender" target="_blank" rel="noopener noreferrer"><i class="bx bx-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-3 col-md-6 portfolio-item filter-html">
+            <div class="portfolio-wrap" style="width: 250px; height: 180px">
+              <img src="assets/img/portfolio/api.png" class="img-fluid">
+              <div class="portfolio-info">
+                <h4>HTML</h4>
+                <p>HTML Api串接政府公開資料</p>
+                <div class="portfolio-links">
+                  <a href="assets/img/portfolio/api.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title="HTML Api串接"><i class="bx bx-plus"></i></a>
+                  <!-- <a href="./vote" class="portfolio-details-lightbox" data-glightbox="type: external" title="Portfolio Details"><i class="bx bx-link"></i></a> -->
+                  <a href="./api" target="_blank" rel="noopener noreferrer"><i class="bx bx-link"></i></a>
                 </div>
               </div>
             </div>

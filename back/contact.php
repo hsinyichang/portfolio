@@ -27,8 +27,18 @@ h2{
 }
 .li:hover{
     background-color: rgba(252, 243, 232, 0.5);
-    transform: scale(1.05);
+    transform: scale(1.01);
     box-shadow: 1px 1px 8px #F7D8B3;
+}
+.button div{
+    margin: auto;
+}
+.button div input{
+    background-color: #F7D8B3;
+    border: 1px solid #FF8961;
+    border-radius: 20px;
+    box-shadow: 1px 1px 6px #F7D8B3;
+    margin-left: 10px;
 }
 </style>
 <?php
@@ -65,8 +75,9 @@ include_once "base.php";
         <?php
         }
         ?>
-        <li class="contactLi li">
-            <input type="submit" value="修改確定"><input type="reset" value="重置">
+        <li class="contactLi button">
+            <div><input type="submit" value="修改確定">
+            <input type="reset" value="重置"></div>
             <input type="hidden" name="table" value="r_<?=$do?>">
             <input type="hidden" name="table1" value="<?=$do?>">
         </li>
