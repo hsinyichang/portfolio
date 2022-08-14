@@ -46,7 +46,6 @@ include_once "base.php";
         <li><a href="#resume" class="nav-link scrollto"><i class="bx bx-file-blank"></i> <span>Resume</span></a></li>
         <li><a href="#about" class="nav-link scrollto"><i class="bx bx-user"></i> <span>About</span></a></li>
         <li><a href="#portfolio" class="nav-link scrollto"><i class="bx bx-book-content"></i> <span>Portfolio</span></a></li>
-        <li><a href="#services" class="nav-link scrollto"><i class="bx bx-server"></i> <span>Services</span></a></li>
         <li><a href="#contact" class="nav-link scrollto"><i class="bx bx-envelope"></i> <span>Contact</span></a></li>
       </ul>
     </nav><!-- .nav-menu -->
@@ -57,7 +56,7 @@ include_once "base.php";
   <section id="hero" class="d-flex flex-column justify-content-center">
     <div class="container" data-aos="zoom-in" data-aos-delay="100">
       <h1>Gina Chang</h1>
-      <p>I'm <span class="typed" data-typed-items="PHP-programer"></span></p>
+      <p>I'm <span class="typed" data-typed-items="web programmer"></span></p>
       <div class="social-links">
         <a href="https://www.facebook.com/f1233772002/" target=_blank class="facebook"><i class="bx bxl-facebook"></i></a>
         <a href="https://www.instagram.com/gina_0615/" target=_blank class="instagram"><i class="bx bxl-instagram"></i></a>
@@ -124,8 +123,10 @@ include_once "base.php";
               <h5>2022.04 - 2022.09</h5>
               <p><em>PHP資料庫網頁設計班</em></p>
               <ul>
-                <li>資料庫程式設計</li>
-                <li>網頁動態技術、排版編輯</li>
+                <li>PHP資料庫程式設計</li>
+                <li>HTML、CSS排版編輯網頁動態技術</li>
+                <li>JS、JQ網頁動態技術</li>
+                <li>Bootstrap 套件應用</li>
                 <li>視覺影像設計、數位媒體應用</li>
                 <li>網頁設計實務、網頁設計乙級檢定輔導</li>
               </ul>
@@ -136,7 +137,11 @@ include_once "base.php";
               <h4>私立大同大學</h4>
               <h5>2010 - 2014</h5>
               <p><em>資訊經營學系</em></p>
-              <p>學習Java程式、PHP資料庫管理、資料分析...</p>
+              <ul>
+                <li>學習Java程式</li>
+                <li>PHP資料庫管理</li>
+                <li>資料分析</li>
+              </ul>
             </div>
             <div class="resume-item">
               <h4>私立天主教恆毅高中</h4>
@@ -279,7 +284,7 @@ include_once "base.php";
                 <div class="portfolio-links">
                   <a href="assets/img/portfolio/api.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title="HTML Api串接"><i class="bx bx-plus"></i></a>
                   <!-- <a href="./vote" class="portfolio-details-lightbox" data-glightbox="type: external" title="Portfolio Details"><i class="bx bx-link"></i></a> -->
-                  <a href="./api" target="_blank" rel="noopener noreferrer"><i class="bx bx-link"></i></a>
+                  <a href="./api_hw" target="_blank" rel="noopener noreferrer"><i class="bx bx-link"></i></a>
                 </div>
               </div>
             </div>
