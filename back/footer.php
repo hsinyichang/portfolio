@@ -22,6 +22,17 @@
     font-weight: bolder;
     font-size: large;
     }
+    .button div{
+        margin: auto;
+    }
+    .button input{
+        background-color: #F7D8B3;
+        border: 1px solid #FF8961;
+        border-radius: 20px;
+        box-shadow: 1px 1px 6px #F7D8B3;
+        margin-left: 10px;
+        margin-top: 5px;
+    }
 </style>
 
 <h2>頁尾版權</h2>
@@ -56,10 +67,12 @@
         <?php
         }
         ?>
-        <li class="footer_li">
-        <input type="submit" value="修改確定" style="margin:auto">
-        <input type="hidden" name="table" value="r_<?=$do?>">
-        <input type="hidden" name="table1" value="<?=$do?>">
-        </li>
+        <div class="button">
+            <div>
+                <input type="submit" value="修改確定" style="margin:auto">
+                <input type="hidden" name="table" value="r_<?=$do?>">
+                <input type="hidden" name="table1" value="<?=$do?>">
+            </div>
+        </div>
     </form>
 </div>

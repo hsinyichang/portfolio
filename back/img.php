@@ -33,6 +33,17 @@
     font-weight: bolder;
     font-size: large;
     }
+    .button div{
+        margin: auto;
+    }
+    .button input{
+        background-color: #F7D8B3;
+        border: 1px solid #FF8961;
+        border-radius: 20px;
+        box-shadow: 1px 1px 6px #F7D8B3;
+        margin-left: 10px;
+        margin-top: 5px;
+    }
 </style>
 
 <h2>頭像</h2>
@@ -74,7 +85,9 @@
     <?php
     }
     ?>
-    <li class="photoli">
-        <input type="submit" value="修改完成">
+    <li class="photoli button">
+        <div>
+            <input type="submit" value="修改完成">
+        </div>
     </li>
 </form>
