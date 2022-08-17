@@ -47,6 +47,7 @@ include_once "base.php";
         <li><a href="#about" class="nav-link scrollto"><i class="bx bx-user"></i> <span>About</span></a></li>
         <li><a href="#portfolio" class="nav-link scrollto"><i class="bx bx-book-content"></i> <span>Portfolio</span></a></li>
         <li><a href="#contact" class="nav-link scrollto"><i class="bx bx-envelope"></i> <span>Contact</span></a></li>
+        <li><a href="./back.php" target="_blank" class="nav-link scrollto"><i class="bx bxs-user-check"></i> <span>Login</span></a></li>
       </ul>
     </nav><!-- .nav-menu -->
 

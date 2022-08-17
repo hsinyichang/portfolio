@@ -14,7 +14,7 @@
 }
 .contactLi div{
     overflow-wrap: break-word; 
-    padding-bottom: 0.5rem;
+    padding-bottom: 1.5rem;
 }
 h2{
     text-align: center;
@@ -31,7 +31,7 @@ h2{
     box-shadow: 1px 1px 8px #F7D8B3;
 }
 .button div{
-    margin: auto;
+    margin: 20px auto;
 }
 .button div input{
     background-color: #F7D8B3;
@@ -39,6 +39,9 @@ h2{
     border-radius: 20px;
     box-shadow: 1px 1px 6px #F7D8B3;
     margin-left: 10px;
+}
+.li{
+    border-bottom: 1px solid #eee;
 }
 </style>
 <?php

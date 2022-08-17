@@ -16,14 +16,14 @@ $admin=$Admin->all();
     .adminli{
         display: flex;
         text-align: center;
-        min-width: max-content;
     }
     .admindiv{
-        width: 40%;
+        width: 60%;
         margin: 2rem auto;
     }
     .button div{
         margin: auto;
+        /* min-width: max-content; */
 
     }
     .button div input{
@@ -32,7 +32,11 @@ $admin=$Admin->all();
         border-radius: 20px;
         box-shadow: 1px 1px 6px #F7D8B3;
         margin-left: 10px;
-        margin-top: 5px;
+        margin-top: 15px;
+        min-width: max-content;
+    }
+    .adminli input{
+        width: 70%;
     }
 </style>
 
