@@ -40,6 +40,8 @@ include_once "base.php";
                     <?php
                     }else{
                     ?>
+
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="?do=admin">編輯管理者</a></li>   
                         <li class="nav-item"><a class="nav-link js-scroll-trigger" href="./api/logout.php">登出</a></li>   
                     <?php
                     }
