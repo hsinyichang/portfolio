@@ -276,6 +276,20 @@ include_once "base.php";
             </div>
           </div>
 
+          <div class="col-lg-3 col-md-6 portfolio-item filter-php">
+            <div class="portfolio-wrap" style="width: 250px; height: 180px">
+              <img src="assets/img/portfolio/bmi.png" class="img-fluid">
+              <div class="portfolio-info">
+                <h4>PHP</h4>
+                <p>PHP Bmi計算<p>
+                <div class="portfolio-links">
+                  <a href="assets/img/portfolio/bmi.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title="PHP Bmi計算"><i class="bx bx-plus"></i></a>
+                  <!-- <a href="./vote" class="portfolio-details-lightbox" data-glightbox="type: external" title="Portfolio Details"><i class="bx bx-link"></i></a> -->
+                  <a href="./Bmi_hw" target="_blank" rel="noopener noreferrer"><i class="bx bx-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
           <div class="col-lg-3 col-md-6 portfolio-item filter-html">
             <div class="portfolio-wrap" style="width: 250px; height: 180px">
               <img src="assets/img/portfolio/api.png" class="img-fluid">
@@ -313,7 +327,7 @@ include_once "base.php";
                 <h4>PS</h4>
                 <p>PS Banner設計</p>
                 <div class="portfolio-links">
-                  <a href="assets/img/portfolio/ps1.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="PS Banner設計 "><i class="bx bx-plus"></i></a>
+                  <a href="assets/img/portfolio/ps1.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="PS Banner設計"><i class="bx bx-plus"></i></a>
                 </div>
               </div>
             </div>

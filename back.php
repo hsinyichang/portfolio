@@ -33,6 +33,7 @@ include_once "base.php";
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="?do=contact">留言區</a></li>
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="?do=footer">頁尾版權</a></li>
                     <li class="nav-item"><a class="nav-link js-scroll-trigger" href="?do=img">頭像</a></li>
+                    <li class="nav-item"><a class="nav-link js-scroll-trigger" href="?do=portfolio">作品集管理</a></li>
                     <?php
                     if(!isset($_SESSION['admin'])){
                     ?>
