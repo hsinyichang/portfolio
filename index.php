@@ -261,6 +261,20 @@ include_once "base.php";
 
         <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="200">
 
+          <div class="col-lg-3 col-md-6 portfolio-item filter-html">
+            <div class="portfolio-wrap" style="width: 250px; height: 180px">
+              <img src="assets/img/portfolio/weather.png" class="img-fluid">
+              <div class="portfolio-info">
+                <h4>HTML</h4>
+                <p>HTML Api串接氣象資訊</p>
+                <div class="portfolio-links">
+                  <a href="assets/img/portfolio/weather.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title="HTML Api串接氣象資訊"><i class="bx bx-plus"></i></a>
+                  <!-- <a href="./vote" class="portfolio-details-lightbox" data-glightbox="type: external" title="Portfolio Details"><i class="bx bx-link"></i></a> -->
+                  <a href="./weather_hw" target="_blank" rel="noopener noreferrer"><i class="bx bx-link"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
           <div class="col-lg-3 col-md-6 portfolio-item filter-php">
             <div class="portfolio-wrap" style="width: 250px; height: 180px">
               <img src="assets/img/portfolio/calender.png" class="img-fluid">
@@ -668,8 +682,10 @@ include_once "base.php";
               </div> -->
               <div class="text-center"><button type="submit">Send Message</button></div>
             </form>
-
-          </div>
+            
+            <div class="col-lg-12"><iframe width="560" height="315" src="https://www.youtube.com/embed/_ibSYYXyfyY" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+          
+        </div>
 
         </div>
 
