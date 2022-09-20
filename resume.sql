@@ -142,7 +142,7 @@ CREATE TABLE `r_portfolio` (
 --
 
 INSERT INTO `r_portfolio` (`id`, `type`, `img`, `href`, `title`, `sh`) VALUES
-(2, 'HTML', 'weather.png', './weather_hw', 'HTML Api串接氣象資訊', 1),
+(2, 'HTML', 'weather.png', 'https://hsinyichang.github.io/Weather/', 'HTML Api串接氣象資訊', 1),
 (3, 'PHP', 'calender.png', './calender', 'PHP Calender', 1),
 (4, 'PHP', 'bmi.png', './Bmi_hw', 'PHP Bmi計算', 1),
 (5, 'HTML', 'api.png', './api_hw', 'HTML Api串接政府公開資料', 1),
