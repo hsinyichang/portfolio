@@ -82,11 +82,10 @@ include_once "base.php";
             <img src="./assets/img/<?=$Img->find(['sh'=>1])['img']?>" class="img-fluid" alt="" width="80%" height="80%">
           </div>
           <div class="col-lg-8 pt-4 pt-lg-0 content">
-            <h3 style="text-align: center;">您好！我是張欣儀</h3>
+            <h3 style="text-align: center;"><?=$Intro->find(1)['title']?></h3>
             <br>
             <p>
-            　　畢業於大同大學資訊經營學系，由於對網頁設計有興趣且大學又是相關科系，所以報名了泰山職訓局為期半年的<strong>PHP網頁設計班課程</strong>，期望在未來能夠更精進自己的程式語言！<br>
-            　　善於當個傾聽者，尊重他人的想法與意見，重視團體合作精神，以細心仔細的態度完成工作。
+                <?=$Intro->find(1)['content']?>
             </p>
             <div class="row">
               <div class="col-lg-6">
@@ -251,166 +250,37 @@ include_once "base.php";
           <div class="col-lg-12 d-flex justify-content-center" data-aos="fade-up" data-aos-delay="100">
             <ul id="portfolio-flters">
               <li data-filter="*" class="filter-active">All</li>
-              <li data-filter=".filter-php">PHP</li>
-              <li data-filter=".filter-html">Html</li>
-              <li data-filter=".filter-ps">PS</li>
-              <li data-filter=".filter-ai">AI</li>
+              <li data-filter=".filter-PHP">PHP</li>
+              <li data-filter=".filter-HTML">Html</li>
+              <li data-filter=".filter-PS">PS</li>
+              <li data-filter=".filter-AI">AI</li>
             </ul>
           </div>
         </div>
 
         <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="200">
-
-          <div class="col-lg-3 col-md-6 portfolio-item filter-html">
+        <?php
+        $rows=$Port->all(['sh'=>1]);
+        foreach($rows as $row){
+        ?>
+        <div class="col-lg-3 col-md-6 portfolio-item filter-<?=$row['type']?>">
             <div class="portfolio-wrap" style="width: 250px; height: 180px">
-              <img src="assets/img/portfolio/weather.png" class="img-fluid">
+              <img src="assets/img/portfolio/<?=$row['img']?>" class="img-fluid">
               <div class="portfolio-info">
-                <h4>HTML</h4>
-                <p>HTML Api串接氣象資訊</p>
+                <h4><?=$row['type']?></h4>
+                <p><?=$row['title']?></p>
                 <div class="portfolio-links">
-                  <a href="assets/img/portfolio/weather.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title="HTML Api串接氣象資訊"><i class="bx bx-plus"></i></a>
+                  <a href="assets/img/portfolio/<?=$row['img']?>" data-gallery="portfolioGallery" class="portfolio-lightbox" title="<?=$row['title']?>"><i class="bx bx-plus"></i></a>
                   <!-- <a href="./vote" class="portfolio-details-lightbox" data-glightbox="type: external" title="Portfolio Details"><i class="bx bx-link"></i></a> -->
-                  <a href="./weather_hw" target="_blank" rel="noopener noreferrer"><i class="bx bx-link"></i></a>
+                  <a href="<?=$row['href']?>" target="_blank" rel="noopener noreferrer"><i class="bx bx-link"></i></a>
                 </div>
               </div>
             </div>
           </div>
-          <div class="col-lg-3 col-md-6 portfolio-item filter-php">
-            <div class="portfolio-wrap" style="width: 250px; height: 180px">
-              <img src="assets/img/portfolio/calender.png" class="img-fluid">
-              <div class="portfolio-info">
-                <h4>PHP</h4>
-                <p>PHP 萬年曆</p>
-                <div class="portfolio-links">
-                  <a href="assets/img/portfolio/calender.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title="PHP Calender"><i class="bx bx-plus"></i></a>
-                  <!-- <a href="./vote" class="portfolio-details-lightbox" data-glightbox="type: external" title="Portfolio Details"><i class="bx bx-link"></i></a> -->
-                  <a href="./calender" target="_blank" rel="noopener noreferrer"><i class="bx bx-link"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-6 portfolio-item filter-php">
-            <div class="portfolio-wrap" style="width: 250px; height: 180px">
-              <img src="assets/img/portfolio/bmi.png" class="img-fluid">
-              <div class="portfolio-info">
-                <h4>PHP</h4>
-                <p>PHP Bmi計算<p>
-                <div class="portfolio-links">
-                  <a href="assets/img/portfolio/bmi.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title="PHP Bmi計算"><i class="bx bx-plus"></i></a>
-                  <!-- <a href="./vote" class="portfolio-details-lightbox" data-glightbox="type: external" title="Portfolio Details"><i class="bx bx-link"></i></a> -->
-                  <a href="./Bmi_hw" target="_blank" rel="noopener noreferrer"><i class="bx bx-link"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-lg-3 col-md-6 portfolio-item filter-html">
-            <div class="portfolio-wrap" style="width: 250px; height: 180px">
-              <img src="assets/img/portfolio/api.png" class="img-fluid">
-              <div class="portfolio-info">
-                <h4>HTML</h4>
-                <p>HTML Api串接政府公開資料</p>
-                <div class="portfolio-links">
-                  <a href="assets/img/portfolio/api.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title="HTML Api串接"><i class="bx bx-plus"></i></a>
-                  <!-- <a href="./vote" class="portfolio-details-lightbox" data-glightbox="type: external" title="Portfolio Details"><i class="bx bx-link"></i></a> -->
-                  <a href="./api_hw" target="_blank" rel="noopener noreferrer"><i class="bx bx-link"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
+        <?php  
+        }
+        ?>
           
-          <div class="col-lg-3 col-md-6 portfolio-item filter-php">
-            <div class="portfolio-wrap" style="width: 250px; height: 180px">
-              <img src="assets/img/portfolio/vote.png" class="img-fluid">
-              <div class="portfolio-info">
-                <h4>PHP</h4>
-                <p>PHP 投票系統</p>
-                <div class="portfolio-links">
-                  <a href="assets/img/portfolio/vote.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title="PHP 投票系統"><i class="bx bx-plus"></i></a>
-                  <!-- <a href="./vote" class="portfolio-details-lightbox" data-glightbox="type: external" title="Portfolio Details"><i class="bx bx-link"></i></a> -->
-                  <a href="./vote" target="_blank" rel="noopener noreferrer"><i class="bx bx-link"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-6 portfolio-item filter-ps">
-            <div class="portfolio-wrap" style="width: 250px; height: 180px">
-              <img src="assets/img/portfolio/ps1.jpg" class="img-fluid">
-              <div class="portfolio-info">
-                <h4>PS</h4>
-                <p>PS Banner設計</p>
-                <div class="portfolio-links">
-                  <a href="assets/img/portfolio/ps1.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="PS Banner設計"><i class="bx bx-plus"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-6 portfolio-item filter-ps">
-            <div class="portfolio-wrap" style="width: 250px; height: 180px">
-              <img src="assets/img/portfolio/ps2.jpg" class="img-fluid">
-              <div class="portfolio-info">
-                <h4>PS</h4>
-                <p>PS 電子海報</p>
-                <div class="portfolio-links">
-                  <a href="assets/img/portfolio/ps2.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Ps 電子海報-旅行社廣告"><i class="bx bx-plus"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-6 portfolio-item filter-ps">
-            <div class="portfolio-wrap" style="width: 250px; height: 180px">
-              <img src="assets/img/portfolio/ps3.jpg" class="img-fluid">
-              <div class="portfolio-info">
-                <h4>PS</h4>
-                <p>PS 動物年曆</p>
-                <div class="portfolio-links">
-                  <a href="assets/img/portfolio/ps3.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Ps 動物年曆"><i class="bx bx-plus"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-6 portfolio-item filter-ps">
-            <div class="portfolio-wrap" style="width: 250px; height: 180px">
-              <img src="assets/img/portfolio/ps6.jpg" class="img-fluid">
-              <div class="portfolio-info">
-                <h4>PS</h4>
-                <p>PS 動物年曆</p>
-                <div class="portfolio-links">
-                  <a href="assets/img/portfolio/ps6.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Ps 動物年曆"><i class="bx bx-plus"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-6 portfolio-item filter-ai">
-            <div class="portfolio-wrap" style="width: 250px; height: 180px">
-              <img src="assets/img/portfolio/AI1.jpg" class="img-fluid">
-              <div class="portfolio-info">
-                <h4>AI</h4>
-                <p>AI 月曆設計</p>
-                <div class="portfolio-links">
-                  <a href="assets/img/portfolio/AI1.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Ai 月曆設計"><i class="bx bx-plus"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="col-lg-3 col-md-6 portfolio-item filter-ai">
-            <div class="portfolio-wrap" style="width: 250px; height: 180px">
-              <img src="assets/img/portfolio/AI2.jpg" class="img-fluid">
-              <div class="portfolio-info">
-                <h4>AI</h4>
-                <p>AI 雜誌</p>
-                <div class="portfolio-links">
-                  <a href="assets/img/portfolio/AI2.jpg" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Ai 雜誌"><i class="bx bx-plus"></i></a>
-                </div>
-              </div>
-            </div>
-          </div>
           
         </div>
         

@@ -3,6 +3,7 @@ include_once "../base.php";
 $DB=new DB($_POST['table']);
 
 $data=[];
+
 if(isset($_FILES['img']['tmp_name'])){
     move_uploaded_file($_FILES['img']['tmp_name'],"../assets/img/".$_FILES['img']['name']);
     $data['img']=$_FILES['img']['name'];
@@ -14,10 +15,9 @@ if(isset($_POST['text'])){
 
 switch($_POST['table']){
     case 'r_footer':
-        $data['sh']=0;
         $data['footer']=$_POST['footer'];
     break;
-    case 'admin':
+    case 'r_admin':
         $data['acc']=$_POST['acc'];
         $data['pw']=$_POST['pw'];
     break;

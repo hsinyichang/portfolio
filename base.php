@@ -126,5 +126,7 @@ $Contact=new DB('r_contact');
 $Admin=new DB('r_admin');
 $Footer=new DB('r_footer');
 $Img=new DB('r_img');
-
+$Port=new DB('r_portfolio');
+$Type=new DB('r_type');
+$Intro=new DB('r_intro');
 ?>

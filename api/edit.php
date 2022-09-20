@@ -20,6 +20,11 @@ if(!empty($_POST['id'])){
                 case 'r_admin':
                     $row['acc']=$_POST['acc'][$idx];
                     $row['pw']=$_POST['pw'][$idx];
+                break;
+                case 'r_portfolio':
+                    $row['href']=$_POST['href'][$idx];
+                    $row['title']=$_POST['title'][$idx];
+                    $row['type']=$_POST['type'][$idx];
                 
             }
 

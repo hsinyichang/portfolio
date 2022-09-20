@@ -43,6 +43,8 @@ include_once "base.php";
                     ?>
 
                         <li class="nav-item"><a class="nav-link js-scroll-trigger" href="?do=admin">編輯管理者</a></li>   
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="?do=intro">編輯自我介紹</a></li>   
+                        <li class="nav-item"><a class="nav-link js-scroll-trigger" href="index.php">前往前台</a></li>   
                         <li class="nav-item"><a class="nav-link js-scroll-trigger" href="./api/logout.php">登出</a></li>   
                     <?php
                     }
