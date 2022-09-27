@@ -153,6 +153,15 @@ include_once "base.php";
           <div class="col-lg-6">
             <h3 class="resume-title">工作經驗</h3>
             <div class="resume-item">
+              <h4>全國電子-企業服務課</h4>
+              <h5>2022.09 - </h5>
+              <p><em>高級程式設計師</em></p>
+              <ul>
+                <li>負責資料庫系統規劃、排程</li>
+                <li>完成主管交辦事項</li>
+              </ul>
+            </div>
+            <div class="resume-item">
               <h4>快樂吉米語文短期補習班</h4>
               <h5>2013 - 2015</h5>
               <p><em>輔導、行政老師 </em></p>
