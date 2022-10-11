@@ -123,7 +123,12 @@
         <div style="width: 19%;"><img src="./assets/img/portfolio/<?=$row['img'];?>"  style="width:80px;heigh:80px;"></div>
         <div style="width: 19%;"><input type="text" name="href[]" value="<?=$row['href']?>" style="width: 132px;margin-right:5px"></div>
         <div style="width: 19%;"><input type="text" name="title[]" value="<?=$row['title']?>" style="width: 140px;"></div>
-        <div style="width: 19%;"><input type="text" name="type[]" value="<?=$row['type']?>" style="width: 140px;"></div>
+        <div style="width: 19%;"><select name="type">
+                                    <option value="PHP" <?php echo ($row['type']=="PHP")?"selected":""; ?>>PHP</option>
+                                    <option value="HTML" <?php echo ($row['type']=="HTML")?"selected":""; ?>>HTML</option>
+                                    <option value="PS" <?php echo ($row['type']=="PS")?"selected":""; ?>>PS</option>
+                                    <option value="AI" <?php echo ($row['type']=="AI")?"selected":""; ?>>AI</option>
+                                </select></div>
         <div style="width: 8%;"><input type="checkbox" name="sh[]" value="<?=$row['id']?>" <?=($row['sh']==1)?'checked':'';?>></div>
         <div style="width: 8%;"><input type="checkbox" name="del[]" value="<?=$row['id']?>"></div>
         <input type="hidden" name="id[]" value="<?=$row['id']?>"><!--要加一個隱藏的id[]-->
